@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:none;
+}
+
+header{
+    background-color: rgb(153, 31, 31);
+
+}
+
+#func{
+    background-color: crimson;
+    padding-bottom: 5px;
+}
+
+nav{
+    background-color: aliceblue;
+}
+nav > a{
+    text-decoration: none;
+    margin-right: 1px;
+    color: black;
+  
+}
+
+nav > a:hover{
+   display:none;
+}
+article{
+    background-color: blue;
+    margin-top: 5px;
+}
+
+article > h2{
+    background-color: azure;
+}
