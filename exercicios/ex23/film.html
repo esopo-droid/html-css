@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width:500px;
+            border-collapse: collapse;
+        }
+        
+        thead{
+            background-color: antiquewhite;
+        }
+
+        th{
+            color: black;
+            border: 1px solid black;
+            font-weight: bolder;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        caption{
+            {{
+                font-size: 1.em;
+            }}
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <th> Grupos</th>
+            <th>Nomes</th>
+            <th scope="colgroup" colspan="2">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Mariana</td>
+                <td>Rambo</td>
+                <td>Karate</td>
+
+            </tr>
+            <tr>
+                <td>Renata</td>
+                <td>fight Club</td>
+                <td>Madagascar</td>
+            </tr>
+           <tr>
+            <td>Luiza</td>
+            <td>Marley and Me</td>
+            <td>Akira</td>
+           </tr>
+
+           <tr>
+            <th scope="rowgroup" rowspan="3">Homens</th>
+            <td>Marcos</td>
+            <td>Barbie</td>
+            <td>Winx</td>
+           </tr>
+           <tr>
+            <td>Bruno</td>
+            <td>Harry Potter</td>
+            <td>Predador</td>
+           </tr>
+           <tr>
+            <td>Renato</td>
+            <td>007</td>
+            <td>Hereditário</td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+</html>
